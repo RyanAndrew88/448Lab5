@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>CSS Maniulation</title>
+    </head>
+        <style>
+            #myElement {
+                border:2px;
+                background-color: rgb(255, 255,255);
+                border-color: rgb(255, 255,255);
+            }
+        </style>
+        <meta charset="utf-8">
+    </head> 
+    <body>
+        <div id="myElement">The University of Kansas (KU) is a public research university with its 
+            main campus in Lawrence, Kansas, United States, and several satellite campuses, research 
+            and educational centers, medical centers, and classes across the state of Kansas.[12] Two
+             branch campuses are in the Kansas City metropolitan area on the Kansas side: the university's 
+             medical school and hospital in Kansas City, Kansas, the Edwards Campus in Overland Park.
+              There are also educational and research sites in Garden City, Hays, Leavenworth, Parsons,
+               and Topeka, an agricultural education center in rural north Douglas County, and branches
+                of the medical school in Salina and Wichita. The university is a member of the Association
+                 of American Universities and is classified among "R1: Doctoral Universities – Very high 
+                 research activity".[13]</div>
+        <br>
+        <label for="bred"> Border-Red (0-255): </label>
+        <input type="text" id="bred" name="bred"><br>
+        <label for="bblue"> Border-Blue (0-255): </label>
+        <input type="text" id="bblue" name="bblue"><br>
+        <label for="bgreen"> Border-Green (0-255): </label>
+        <input type="text" id="bgreen" name="bgreen"><br>
+        <label for="bwidth">Border-Width:</label>
+        <input type="text" id="bwidth" name="bwidth"><br>
+
+        <label for="bkred"> Background-Red (0-255): </label>
+        <input type="text" id="bkred" name="brked"><br>
+        <label for="bkblue"> Background-Blue (0-255): </label>
+        <input type="text" id="bkblue" name="bkblue"><br>
+        <label for="bkgreen"> Background-Green (0-255): </label>
+        <input type="text" id="bkgreen" name="bkgreen"><br>        
+        <button type="button" onclick="changeStyle()">Change Style</button>
+        <script>
+        function changeStyle(){
+            var element = document.getElementById("myElement");
+            bwidth = document.getElementById("bwidth").value;
+            element.style.borderWidth = bwidth;
+            bred = document.getElementById("bred").value;
+            bblue = document.getElementById("bblue").value;
+            bgreen = document.getElementById("bgreen").value;
+            bkred = document.getElementById("bkred").value;
+            bkblue = document.getElementById("bkblue").value;
+            bkgreen = document.getElementById("bkgreen").value;
+            element.style.borderColor = rgb(bred,bblue.bgreen);
+            element.style.backgroundColor = rgb(bkred,bkblue,bkblue);
+        }
+        </script>
+    </body>
+    </html>
